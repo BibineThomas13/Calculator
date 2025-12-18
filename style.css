@@ -4,28 +4,29 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #1a1a1a; /* Dark background */
-    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
 }
 
 .calculator {
-    background-color: #2e2e2e; /* Darker calculator body */
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    width: 320px;
-    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: #fff; /* Light background for calculator body */
+    padding: 10px; /* Adjusted padding */
 }
 
 #display {
     width: 100%;
-    height: 80px;
+    height: 50px; /* Reverted height */
     border: none;
     text-align: right;
-    padding: 20px;
-    font-size: 48px;
+    padding: 10px;
+    font-size: 24px; /* Reverted font size */
     box-sizing: border-box;
-    background-color: transparent;
-    color: #fff;
+    background-color: #f0f0f0; /* Light background for display */
+    color: #333; /* Darker text for display */
+    margin-bottom: 10px; /* Added margin for separation */
 }
 
 .buttons {
@@ -36,22 +37,22 @@ body {
 
 button {
     border: none;
-    border-radius: 50%; /* Circular buttons */
+    border-radius: 50%; /* Keep circular buttons */
     height: 60px;
     width: 60px;
     font-size: 24px;
     cursor: pointer;
-    background-color: #4f4f4f;
-    color: #fff;
+    background-color: #e0e0e0; /* Light background for buttons */
+    color: #333; /* Darker text for buttons */
     transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: #6a6a6a;
+    background-color: #d4d4d4;
 }
 
 button:active {
-    background-color: #7f7f7f;
+    background-color: #c9c9c9;
 }
 
 /* Operator buttons with a different color */
